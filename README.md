@@ -29,7 +29,11 @@ that week (higher is better):
 | Repurchase, then age-band popularity (heuristic) | 0.02600 |
 | Global top-12 of last week | 0.00898 |
 
-The ranker is **26.1% better** than the best baseline. Stage 1 surfaces **16.0%** of the purchases
+**Kaggle late submission:** private-leaderboard MAP@12 **0.02757** (public 0.02741) on the competition's
+hidden test week (2020-09-23 to 2020-09-29), submitted 2026-11-15 with `scripts/kaggle_submit.py`. It is
+lower than the validation score because the test week is a different, unseen week.
+
+The ranker is **26.1% better** than the best baseline on the validation week. Stage 1 surfaces **16.0%** of the purchases
 actually made that week, from about 182 candidates per customer. That recall is the ceiling the ranker
 works under.
 

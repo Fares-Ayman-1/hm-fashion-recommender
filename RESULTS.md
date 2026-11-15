@@ -1,6 +1,6 @@
 # Results
 
-Generated from MLflow on 2026-11-15 18:34 UTC by `python -m hmrec.report`.
+Generated from MLflow on 2026-11-15 19:06 UTC by `python -m hmrec.report`.
 Metric: **MAP@12** (the competition metric; higher is better) on validation week 104
 (2020-09-16 to 2020-09-22), over the 68,984 customers who bought something that week.
 The ranker was trained on label weeks [101, 102, 103]; nothing from the validation week is used.
@@ -29,3 +29,7 @@ Average candidates per customer: 181.9. Recall caps what the ranker can achieve:
 
 - 3,872,929 training rows (negatives sampled at 0.25), 42 features, 400 boosting rounds, learning rate 0.05, 63 leaves
 - CLIP similarity source used: True
+
+## Kaggle late submission
+
+Private leaderboard MAP@12 **0.02757** (public 0.02741), submitted 2026-11-15.
