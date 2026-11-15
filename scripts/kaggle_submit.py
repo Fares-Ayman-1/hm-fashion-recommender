@@ -61,11 +61,15 @@ def main() -> int:
                 "date": datetime.now(UTC).strftime("%Y-%m-%d"),
                 "description": getattr(latest, "description", a.message),
             }
-            (cfg.paths.reports / "kaggle_score.json").write_text(json.dumps(score, indent=2), encoding="utf-8")
+            (cfg.paths.reports / "kaggle_score.json").write_text(
+                json.dumps(score, indent=2), encoding="utf-8"
+            )
             print(json.dumps(score, indent=2))
             return 0
         if latest is not None and "error" in status:
-            print(f"Kaggle reported an error: {getattr(latest, 'error_description', status)}", file=sys.stderr)
+            print(
+                f"Kaggle reported an error: {getattr(latest, 'error_description', status)}", file=sys.stderr
+            )
             return 1
     print("timed out waiting for the score; check the Submissions tab on Kaggle", file=sys.stderr)
     return 1
