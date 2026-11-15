@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-15T18:33:50+00:00",
+  "week": 104,
+  "values": {
+    "new_article_share": 0.1320538801802664,
+    "top100_overlap": 0.48148148148148145,
+    "price_psi": 0.001861545324775244
+  },
+  "alerts": {
+    "new_article_share": false,
+    "top100_overlap": false,
+    "price_psi": false
+  },
+  "retrain_recommended": false
+}

@@ -1,0 +1,23 @@
+{
+  "trained_at": "2026-11-15T18:02:06+00:00",
+  "k": 12,
+  "valid_week": 104,
+  "test_week": 105,
+  "map12": {
+    "lgbm_ranker": 0.03277923559250785,
+    "baseline_popular": 0.00898419179096661,
+    "baseline_repurchase_popular": 0.025996469016143872
+  },
+  "candidate_recall": {
+    "all": 0.15957665818236264,
+    "repurchase": 0.027736188052103608,
+    "popular": 0.07122604431801167,
+    "cooccur": 0.08567431501721814,
+    "similar": 0.01797144033537955
+  },
+  "mlflow_run_ids": {
+    "baselines": "0d2870e50d884fc099f74cc0d4178eef",
+    "lgbm": "9feec56d76c14f9f952f18caa1a15535"
+  },
+  "embeddings": true
+}

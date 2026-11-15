@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    image: hmrec:latest
+    ports: ["8010:8010"]
+    volumes:
+      - ./reports/serving:/app/reports/serving:ro
+      - ./data/thumbs:/app/data/thumbs:ro
+
+  dashboard:
+    image: hmrec:latest
+    depends_on: [api]
+    command: ["streamlit", "run", "app/dashboard.py", "--server.port=8511", "--server.address=0.0.0.0",
+              "--server.headless=true"]
+    ports: ["8511:8511"]
+    volumes:
+      - ./reports/serving:/app/reports/serving:ro
+      - ./data/thumbs:/app/data/thumbs:ro
