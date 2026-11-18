@@ -1,0 +1,14 @@
+[
+  { "key": "hook", "dur": 210, "energy": 0, "whoosh": false, "ticks": [52, 70, 88] },
+  { "key": "title", "dur": 110, "energy": 1, "boom": true },
+  { "key": "scale", "dur": 180, "energy": 1, "ticks": [16, 21, 26] },
+  { "key": "funnel", "dur": 180, "energy": 1, "ticks": [20, 46, 72] },
+  { "key": "stage1", "dur": 255, "energy": 2, "ticks": [116] },
+  { "key": "stage2", "dur": 220, "energy": 2 },
+  { "key": "results", "dur": 255, "energy": 3, "riser": true, "ticks": [80] },
+  { "key": "honest", "dur": 200, "energy": 1 },
+  { "key": "explain", "dur": 210, "energy": 2 },
+  { "key": "demo", "dur": 450, "energy": 2 },
+  { "key": "eng", "dur": 225, "energy": 2, "ticks": [16, 30, 35, 40, 45, 50, 55] },
+  { "key": "outro", "dur": 210, "energy": 1, "boom": true }
+]
